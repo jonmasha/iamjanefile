@@ -1,0 +1,182 @@
+@import url('/bootstrap/scss/bootstrap.scss');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css");
+
+$color: #f5f4f4;
+$background-color: #282828;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #282828;
+    font-family: "open sans", sans-serif !important; 
+    font-size: 95%;
+    color: #f5f4f4;
+}
+
+ul{
+    list-style: none;
+}
+
+.h-button{
+    border-radius: 0;
+    width: 125px;
+    height: 40px;
+}
+
+a{
+    text-decoration: none;
+    color: #f5f4f4;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #f5f4f4;
+    font-weight: bolder;
+}
+
+.form-control{
+    background-color: transparent;
+    border-radius: 0;
+}
+h2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav-link{
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+.text-18{
+    font-size: 1.125rem;
+}
+
+header{
+    background-image: url('/assets/bg.png');
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+    height: 100vmin;
+
+    .active{
+        font-weight: bold;
+    }
+
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .left{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        width: 26rem;
+        color: #f5f4f4;
+        margin-top: 50%;
+    }
+
+    .right{
+        height: 100vmin;
+        margin-top: 50vmin;
+        text-decoration: none;
+    }
+}
+
+
+#about{
+    height: 100%;
+
+    .container{
+        height: 100%;
+    }
+
+    .row{
+        height: 100%;
+    }
+    
+    .left_about{
+        width: 100%;
+
+        .image{
+            // display: grid;
+            place-items: center;
+            height: 100%;
+            width: 100%;
+
+            img{
+                width: inherit;
+                max-width: 28rem;
+            }
+        }
+    }
+    .right_about{
+        display: grid;
+        place-items: center;
+
+
+    }
+}
+#gallery{
+    height: 100%;
+
+    .col-md-4{
+        width: 100%;
+        margin-top: 1rem;
+
+        img{
+            width: inherit;
+            height: 20rem;
+            border: 2px solid green;
+        }
+    }
+}
+
+#contact{
+    display: flex;
+    justify-content: space-between;
+
+    .contact{
+        margin-right: 10rem;
+    }
+}
+
+.right {
+    
+    .form-control{
+        display: block;
+        width: 100%;
+        background-color: transparent;
+        border-radius: 0px;
+    }
+    .name{
+        margin-right: 0.70rem;
+    }
+    .container{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .text-center{
+        text-align: center !important;
+    }
+    .love{
+        width: 50%;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    #gallery {
+        height: 100%;
+
+        .col-md-4{
+            width: 100%;
+            margin-top: 3rem;
+        }
+    }
+
+}
